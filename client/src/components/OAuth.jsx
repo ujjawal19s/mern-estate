@@ -1,7 +1,7 @@
 import React from 'react'
 import {GoogleAuthProvider, getAuth, signInWithPopup} from 'firebase/auth';
 import {app} from '../firebase';
-import { signInSucess } from '../redux/user/userSlice';
+import { signInSuccess } from '../redux/user/userSlice';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
@@ -24,7 +24,7 @@ export default function OAuth() {
       photo: result.user.photoURL})
      });
      const data = await res.json();
-     dispatch(signInSucess(data));
+     dispatch(signInSuccess(data));
      navigate('/home');
 
    }catch(error){
