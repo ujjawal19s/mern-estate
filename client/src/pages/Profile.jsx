@@ -11,7 +11,7 @@ export default function Profile() {
   const [fileUploadError, handleFileUploadError] = useState(false);
   const [formData, setFormData] = useState({});
   
-
+  
   // allow read;
   // allow write: if 
   //  request.resource.size < 2* 1024 * 1024 &&
@@ -48,7 +48,7 @@ export default function Profile() {
   }
 
   
-
+  
   return (
     <div className='p-3 max-w-lg mx-auto'>
       <h1 className='text-3xl font-semibold text-center my-7'>Profile</h1>
